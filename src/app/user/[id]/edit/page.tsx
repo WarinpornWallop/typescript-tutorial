@@ -2,9 +2,10 @@ import EditUserComponent from "@/components/user/edit-user";
 interface EditUserPageProps {
   params: { id: string };
 }
-export default function EditUser ({params}: EditUserPageProps) {
-  const userId = params.id;
-    return (
-        <EditUserComponent userId={userId} />
-    );
+export default async function EditUser({ params }: EditUserPageProps) {
+    const paramsData = await params;
+  const userId = paramsData.id;
+  return (
+    <EditUserComponent userId={userId} />
+  );
 }

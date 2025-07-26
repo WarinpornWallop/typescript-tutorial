@@ -14,6 +14,7 @@ import MediaCard from "@/components/mui/card/media-card";
 import AlertDialog from "@/components/mui/dialog/dialog";
 import CustomSnackbar from "@/components/mui/snackbar/snackbar";
 import CustomPaginationTable from "@/components/mui/table/table-pagination";
+import CustomBreadcrumb from "@/components/mui/breadcrumb/basic-breadcrumb";
 
 export default function WhatiscomponentPage() {
   const [text, setText] = useState<string>("");
@@ -45,6 +46,13 @@ export default function WhatiscomponentPage() {
         onPageClick={(page) => alert(`ไปหน้า ${page}`)}
         onSettingClick={(setting) => alert(`เลือก ${setting}`)}
       />
+        <CustomBreadcrumb
+            items={[
+                { label: "Home", href: "/" },
+                { label: "Components", href: "/components" },
+                { label: "What is Component?", href: "/components/whatiscomponent" },
+            ]}
+        />
       <Box sx={{ p: 3 }}>
         <Grid container spacing={2}>
 
