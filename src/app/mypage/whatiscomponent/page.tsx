@@ -15,6 +15,7 @@ import AlertDialog from "@/components/mui/dialog/dialog";
 import CustomSnackbar from "@/components/mui/snackbar/snackbar";
 import CustomPaginationTable from "@/components/mui/table/table-pagination";
 import CustomBreadcrumb from "@/components/mui/breadcrumb/basic-breadcrumb";
+import CircularWithValueLabel from "@/components/mui/progress/loading";
 
 export default function WhatiscomponentPage() {
   const [text, setText] = useState<string>("");
@@ -227,6 +228,9 @@ export default function WhatiscomponentPage() {
             </Typography>
             <Typography color="primary">ข้อความสีหลัก</Typography>
             <Typography sx={{ color: "#e11d48" }}>ข้อความสีแดง</Typography>
+          </Grid>
+          <Grid size={{ xs: 12, md: 6 }}>
+            <CircularWithValueLabel />
           </Grid>
 
       
