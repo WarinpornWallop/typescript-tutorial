@@ -1,36 +1,48 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# โปรเจกต์นี้สร้างด้วย Next.js + TypeScript + MUI
 
-## Getting Started
+โปรเจกต์นี้ใช้ [Next.js](https://nextjs.org) สำหรับสร้างเว็บแอป และใช้ [Material UI (MUI)](https://mui.com/) สำหรับ UI component  
+โค้ดเขียนด้วย TypeScript เพื่อความปลอดภัยและอ่านง่าย
 
-First, run the development server:
+## วิธีติดตั้งและเริ่มต้นใช้งาน
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+1. ติดตั้งแพ็กเกจ
+   ```bash
+   npm install
+   ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. รันเซิร์ฟเวอร์สำหรับพัฒนา
+   ```bash
+   npm run dev
+   ```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. เปิดเว็บเบราว์เซอร์ที่ [http://localhost:3000](http://localhost:3000)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## รายชื่อหน้าเพจหลักในโปรเจกต์นี้
 
-## Learn More
+- `/` : หน้าแรก
+- `/mypage/whatiscomponent` : ตัวอย่างการใช้ MUI component หลายแบบ เช่น Card, Dialog, Snackbar, Table, Breadcrumb ฯลฯ
+- `/user/usermanagement` : หน้าจัดการผู้ใช้ (User Management) พร้อมตารางและปุ่มเพิ่ม/แก้ไข/ลบ
+- `/user/add` : หน้าเพิ่มผู้ใช้ใหม่
+- `/user/[id]/edit` : หน้าแก้ไขข้อมูลผู้ใช้ (ดึงข้อมูลจาก API)
+- มีการใช้ MUI component เช่น Grid, Typography, Button, Card, Dialog, Snackbar, Breadcrumb, Table ฯลฯ ในทุกหน้า
 
-To learn more about Next.js, take a look at the following resources:
+## วิธีแก้ไขหน้าเว็บ
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- แก้ไขไฟล์ในโฟลเดอร์ `app/` หรือ `components/` ตามแต่ละหน้า
+- เมื่อบันทึกไฟล์ หน้าเว็บจะรีเฟรชอัตโนมัติ
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## ข้อมูลเพิ่มเติม
 
-## Deploy on Vercel
+- [Next.js Documentation](https://nextjs.org/docs)
+- [Material UI Documentation](https://mui.com/)
+- [Learn Next.js](https://nextjs.org/learn)
+- [GitHub Next.js](https://github.com/vercel/next.js)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## วิธี Deploy ขึ้น Vercel
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- สมัครสมาชิกที่ [Vercel](https://vercel.com)
+- เชื่อมต่อกับ GitHub ของโปรเจกต์นี้
+- กด "New Project" แล้วเลือก repo นี้
+- อ่านรายละเอียดเพิ่มเติมที่ [Next.js Deployment](https://nextjs.org/docs/app/building-your-application/deploying)
+
+---
